@@ -1,0 +1,180 @@
+.navbar {
+  background: #1c2237;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 25px;
+}
+
+.container {
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.navbar__logo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__icon {
+  margin-right: 0.5rem;
+}
+
+.navbar__menu-icon {
+  display: none;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  list-style: none;
+  text-align: center;
+  /* justify-content: end; */
+}
+
+.navbar__item {
+  height: 80px;
+  padding: 0 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar__item:hover {
+ 
+  border-bottom: 3px solid #f00946;
+}
+
+
+.navbar__links {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  padding: 0 1rem;
+  align-items: center;
+  height: 100%;
+}
+.navbar__links:hover {
+  color: #f00946; 
+  transform: scale(1.2);
+}
+
+
+.navbar__btn {
+  margin-left: 15px;
+}
+
+/* icon menu khi ở giao diên mobile */
+.navbar__menu-icon {
+  display: none;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navbar__menu.active {
+    background: #1c2237;
+    left: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
+
+  .navbar__item:hover {
+    border: none;
+  }
+
+  .navbar__item {
+    width: 100%;
+  }
+
+  .navbar__links {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    /* display: table; */
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .navbar__links:hover {
+    color: #f00946;
+    transform: scale(1.2);
+    transition: all 0.3 ease;
+    padding: 0;
+    
+  }
+
+  
+
+  .navbar__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 120px;
+  }
+  .navbar__btn-link {
+    width: 100%;
+  }
+  
+  /* icon menu khi ở giao diên mobile */
+  .navbar__menu-icon {
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}
