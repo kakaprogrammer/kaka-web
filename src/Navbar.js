@@ -4,7 +4,7 @@ import { MdFingerprint } from "react-icons/md";
 import "./Navbar.css";
 
 import { FaBars, FaTimes } from "react-icons/fa";
-import Button from "./components/Button";
+import KButton, { ButtonStyle } from "./components/KButton";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -56,38 +56,38 @@ const Navbar = () => {
             <li className="navbar__btn">
               {button ? (
                 <Link to="/sign-up" className="navbar__btn-link" onClick={closeMobileMenu}>
-                  <Button 
-                    buttonStyle="btn--outline"
+                  <KButton 
+                    buttonStyle={ButtonStyle.Outline}
                   > 
                     SIGN UP
-                  </Button>
+                  </KButton>
                 </Link>
               ) : (
                 <Link to="/sign-up" className="navbar__btn-link" onClick={closeMobileMenu}>
-                  <Button
-                    buttonStyle="btn--outline"
-                    buttonSize="btn--mobile"
+                  <KButton
+                    buttonStyle={ButtonStyle.Outline}
+                    buttonSize="btn__mobile"
                   >
                     SIGN UP
-                  </Button>
+                  </KButton>
                 </Link>
               )}
             </li>
             <li className="navbar__btn">
               {button ? (
                 <Link to="/sign-in" className="navbar__btn-link" onClick={closeMobileMenu}>
-                  <Button buttonSize="large"> 
+                  <KButton> 
                     SIGN IN
-                  </Button>
+                  </KButton>
                 </Link>
               ) : (
                 <Link to="/sign-in" className="navbar__btn-link" onClick={closeMobileMenu}>
-                  <Button
+                  <KButton
                     
-                    buttonSize="btn--mobile"
+                    buttonSize="btn__mobile"
                   >
                     SIGN IN
-                  </Button>
+                  </KButton>
                 </Link>
               )}
             </li>

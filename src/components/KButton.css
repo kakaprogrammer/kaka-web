@@ -1,0 +1,146 @@
+:root {
+  --primary: #013ADF;
+  --primaryDark: #08088A;
+  --white: #fff;
+  --blue: #276afb ;
+  --red:#f00946 ;
+  --green: #25ce4a;
+  --colorBg: rgb(66, 66, 66, 0.1);
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--colorBg);
+  white-space: nowrap
+}
+
+.btn__normal {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn__outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn__normal:hover {
+  background-color: var(--colorBg);
+  color: var(--primary);
+  border: none;
+  transition: all 0.3s ease-out;;
+}
+
+.btn__outline:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  transition: all 0.3s ease-out; 
+}
+
+/* Set button Color */
+
+.red {
+  background-color: #f00946;
+  color: var(--white);;
+  border: none;
+}
+
+.blue {
+  background-color: #276afb;
+  color: var(--white);
+  border: none;
+}
+
+.green {
+  background-color: #25ce4a;
+  color: var(--white);
+  border: none;
+}
+
+.red:hover {
+  background-color:  var(--colorBg);
+  color: var(--red);
+  border: none;
+}
+
+.blue:hover {
+  background-color: var(--colorBg);
+  color: var(--blue);
+  border: none;
+}
+
+.green:hover {
+  background-color:  var(--colorBg);
+  color: var(--green);
+  border: none;
+}
+
+
+.red-outline {
+  background-color: transparent;
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.blue-outline {
+  background-color: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.green-outline {
+  background-color: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.red-outline:hover {
+  background-color: #f00946;
+  color: var(--white);;
+  border: none;
+}
+
+.blue-outline:hover {
+  background-color: #276afb;
+  color: var(--white);
+  border: none;
+}
+
+.green-outline:hover {
+  background-color: #25ce4a;
+  color: var(--white);
+  border: none;
+}
+
+
+/* Set button size */
+.btn__small {
+  padding: 5px 14px;
+  font-size: 16px;
+}
+
+.btn__medium {
+  padding: 8px 20px;
+  font-size: 18px;
+}
+
+.btn__large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn__mobile {
+  width: 80%;
+  text-align: center;
+  
+  font-size: 24px;
+  padding: 14px 20px;
+}
+
+
+
