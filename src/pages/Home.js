@@ -1,26 +1,17 @@
 import React from 'react'
-import KButton, { ButtonColor, ButtonSize, ButtonStyle } from '../components/KButton'
+import KakaSection from '../components/KakaSection'
+import {homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from './Data'
 
 const Home = () => {
   return (
-    <div className="home">
-      <h1>Trang chủ</h1>
-      
-      <KButton>EEEEEEE</KButton>
-      <KButton
-        buttonSize={ButtonSize.Large}
-        buttonColor={ButtonColor.Green}
-       >
-        Cai quan 1
-      </KButton>
-      <KButton 
-        buttonStyle={ButtonStyle.Outline}
-        buttonSize={ButtonSize.Large}
-        buttonColor={ButtonColor.Red}
-      >
-        Cai quan
-      </KButton>
-    </div>
+    <>
+      <KakaSection {...homeObjOne} />
+
+      <KakaSection {...homeObjTwo} />
+
+      <KakaSection {...homeObjThree} /> 
+      <KakaSection {...homeObjFour} />
+    </>
   )
 }
 

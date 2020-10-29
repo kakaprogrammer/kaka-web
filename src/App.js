@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Navbar />
         <Switch>
